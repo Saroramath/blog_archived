@@ -4,17 +4,17 @@
 const config = {
   /* Site
   ========================================= */
-  title: `gatsby-blog-mdx`,          // Displayed in header
-  description: `This is my blog`,     // Site description
-  maxWidth: "768px",                  // Max width of website
-  enableAbout: true,                  // Enables about page
+  title: `Think Space`,          // Displayed in header
+  description: `A place to document knowledge that aids thinking.`,     // Site description
+  maxWidth: "1200px",                  // Max width 768px of website
+  enableAbout: false,                  // Enables about page
   siteUrl: `https://yourDomain.com/`, // For sitemap & RSS feed
   useScrollIndicator: true,           // Use scroll indicator on top of screen in posts
 
   /* Profile
   ========================================= */
-  author: `Author Name`,                             // Name shows on profile
-  profileDescription: "{Edit me in customize.js}",   // Shows under author name
+  author: `Shivam Arora`,                             // Name shows on profile
+  profileDescription: "",   // Shows under author name
   profileImageName: `profile.jpeg`,                  // Place profile.jpg/.jpeg/.png in _assets folder
   location: "",                                      // Location under profileDescription. "" --> disabled
   footerLink: "",                                    // Link to page when you click footer name
@@ -35,12 +35,12 @@ const config = {
 
   /* Social Media Share Buttons--available below every post
   ========================================= */
-  shareButtons: { email: false, facebook: true, twitter: true, reddit: false, linkedIn: false },
+  shareButtons: { email: false, facebook: false, twitter: false, reddit: false, linkedIn: false },
 
   /* Comments
   ========================================= */
   comments: {
-    facebook: { enabled: true, appId: "" },      // appId: optional, but used to moderate fb comments
+    facebook: { enabled: false, appId: "" },      // appId: optional, but used to moderate fb comments
     disqus: { enabled: false, shortName: "" },   // Check your shortName on https://disqus.com
     utterances: { enabled: false, repoUrl: "" }, // i.e. 'ellismin/gatsby-blog-mdx'
   },
@@ -50,7 +50,7 @@ const config = {
   defaultTheme: "light",                      // Options: dark / light -- applied to first visitors
   showTimeToRead: false,                      // Shows time to read for each post in main page
   breakCodeLines: false,                      // Breaks long code lines instead of having horizontal scroll
-  faviconSrc: `_assets/icon-code.png`,        // Favicon
+  faviconSrc: `_assets/tree.png`,        // Favicon
   gaTrackingId: ``,                           // Your google analytics tracking id--i.e. UA-*****
   googleAdSenseId: ``,                        // Your google AdSense client id--i.e. ca-pub-****
 }

@@ -281,7 +281,7 @@ class PostTemplate extends React.Component {
             <ShareButtons location={this.state.location} />
             <LinkEdgePosts pageContext={this.props.pageContext} />
             <Hr widthInPercent="97" verticalMargin="0.8rem" />
-            <Profile />
+            {/* <Profile /> */}
             <Hr widthInPercent="97" verticalMargin="0.8rem" />
 
             {comments.facebook.enabled && (
