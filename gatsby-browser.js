@@ -4,6 +4,9 @@ import Prism from "prism-react-renderer/prism"
 
 export const wrapRootElement = wrap
 
+
+require(`katex/dist/katex.min.css`)
+
 // Using line numbering for code blocks
 require("prismjs/plugins/line-numbers/prism-line-numbers")
 

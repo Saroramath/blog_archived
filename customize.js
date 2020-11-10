@@ -8,7 +8,7 @@ const config = {
   description: `A place to document knowledge that aids thinking.`,     // Site description
   maxWidth: "1200px",                  // Max width 768px of website
   enableAbout: false,                  // Enables about page
-  siteUrl: `https://yourDomain.com/`, // For sitemap & RSS feed
+  siteUrl: `https://saroramath.github.io/blog/`, // For sitemap & RSS feed
   useScrollIndicator: true,           // Use scroll indicator on top of screen in posts
 
   /* Profile
