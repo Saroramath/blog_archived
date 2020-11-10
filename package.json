@@ -55,6 +55,7 @@
     "react-share": "^4.0.1",
     "react-switch": "^5.0.1",
     "rehype-katex": "^4.0.0",
+    "remark": "^13.0.0",
     "remark-math": "^4.0.0",
     "styled-components": "^5.0.1"
   },
