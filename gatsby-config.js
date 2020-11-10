@@ -1,6 +1,5 @@
 const config = require("./customize")
 const rss = require("./gatsby-rss")
-const remarkMath = require(`remark-math`)
 
 module.exports = {
   siteMetadata: config,
@@ -39,8 +38,6 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        remarkPlugins: [require(`remark-math`)],
-        rehypePlugins: [require(`rehype-katex`)],
         gatsbyRemarkPlugins: [
           // Adding title to code blocks. Usage: ```js:title=example.js
           {
@@ -74,10 +71,7 @@ module.exports = {
               ignoreFileExtensions: [`png`, `jpg`, `jpeg`, `bmp`, `tiff`],
             },
           },
-          //adding math here 
-          //`gatsby-remark-katex`,
-
-        ], //remarkPlugins: [remarkMath],
+        ], 
       },
     },
 
@@ -126,17 +120,6 @@ module.exports = {
               linkImagesToOriginal: false,
             },
           },
-          {
-            resolve: `gatsby-remark-katex`,
-            options: {
-              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
-              strict: `ignore`
-            }
-          },
-
-
-
-
         ],
       },
     },
