@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 import MainCard from "../components/MainCard"
+import GetRandomData from "../components/data/data_component"
+import { Link } from "gatsby"
 
 const loadsPer = 15
 
@@ -44,7 +46,10 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
+      
       <MainCard posts={posts} loads={loaded} />
+      <Link to="/data/">Click to see dancing Data</Link>
+      <GetRandomData />
     </Layout>
   )
 }
