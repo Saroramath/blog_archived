@@ -1,5 +1,9 @@
 const config = require("./customize")
 const rss = require("./gatsby-rss")
+//adding latex support from https://mdxjs.com/guides/math-blocks
+const remarkMath = require('remark-math')
+const rehypeKatex = require('rehype-katex')
+
 
 module.exports = {
   siteMetadata: config,
@@ -38,7 +42,28 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
+        //adding latex 
+        remarkPlugins: [
+          [
+            remarkMath,
+            {
+              /* options */
+            }
+          ]
+        ],
+        rehypePlugins: [
+          [
+            rehypeKatex,
+            {
+              /* options */
+            }
+          ]
+        ],
         gatsbyRemarkPlugins: [
+          //adding katex 
+          {
+            resolve: 'gatsby-remark-katex',
+          },
           // Adding title to code blocks. Usage: ```js:title=example.js
           {
             resolve: "gatsby-remark-code-titles",
@@ -51,7 +76,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: config.maxWidth,
+              maxWidth: 400,
               backgroundColor: `transparent`,
               linkImagesToOriginal: false,
             },

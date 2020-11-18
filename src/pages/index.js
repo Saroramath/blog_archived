@@ -49,7 +49,6 @@ const IndexPage = ({ data }) => {
       
       <MainCard posts={posts} loads={loaded} />
       <Link to="/data/">Click to see dancing Data</Link>
-      <GetRandomData />
     </Layout>
   )
 }
