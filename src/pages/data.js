@@ -1,6 +1,6 @@
 import React from "react"
 import * as D3 from 'd3'
-import App from "../components/data/rendergraph"
+
 
 const getRandomData = () => 
           D3.range(20).map(() => ({x: Math.random(),y: Math.random()}))
@@ -13,7 +13,7 @@ const getRandomData = () =>
               <svg width = {400} height = {400}>
                   {data.map(d => (<circle cx = {xScale(d.x)} cy ={yScale(d.y)} r={5}/>))} </svg>
                   
-                  <App />
+                  
                   </div>
 
 
