@@ -7,7 +7,7 @@ const rehypeKatex = require('rehype-katex')
 
 module.exports = {
   siteMetadata: config,
-  pathPrefix: "/blog", 
+  pathPrefix: `/blog`, 
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sitemap`,
